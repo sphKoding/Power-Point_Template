@@ -30,6 +30,6 @@ nav {
 /* pc responsive */
 @media screen and (min-width: 480px) {
  header, section, footer {
-  height: 558px;
+  height: 554px;
  }
 }
