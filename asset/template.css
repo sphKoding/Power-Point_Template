@@ -1,5 +1,5 @@
 * {
- outline: 1px dashed red;
+ /* outline: 1px dashed red; */
  margin: 0;
 }
 
@@ -18,8 +18,18 @@ nav {
  position: -webkit-sticky; /* safari */
  position: sticky;
  top: 0;
+	background: gray;
 }
 section h3, p {
+	text-align: center;
+}
+
+/* element */
+table {
+	width: 100%;
+	margin: 14px 0px;
+}
+td {
 	text-align: center;
 }
 
@@ -33,7 +43,7 @@ section h3, p {
 /* pc responsive */
 @media screen and (min-width: 480px) {
  header, section, footer {
-  height: 554px;
+  min-height: 554px;
  }
 	header, nav, section, footer {
 		padding: 8px 40px;
@@ -41,18 +51,29 @@ section h3, p {
 }
 
 /* class styling */
+.boxShadow {
+	width: 200px;
+	height: 260px;
+	box-shadow: 5px 5px 10px black;
+}
 .flexContainer {
 	margin: 12px 0px;
 	display: flex;
 }
-.boxShadow {
-	width: 200px;
-	height: 260px;
-	background: lime;
-	box-shadow: 5px 5px 10px black;
-}
 
 /* id styling */
-#flexContainerAsset {
+#backgroundBlue {
+	background: blue;
+}
+#backgroundRed {
+	background: red;
+}
+#backgroundYellow {
+	background: yellow;
+}
+#flexContainer_spaceEvenly {
 	justify-content: space-evenly;
+}
+#textAlign_center {
+	text-align: center;
 }
