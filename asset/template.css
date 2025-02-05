@@ -1,5 +1,5 @@
 * {
- /* outline: 1px dashed red; */
+ outline: 1px dashed red;
  margin: 0;
 }
 
@@ -35,4 +35,24 @@ section h3, p {
  header, section, footer {
   height: 554px;
  }
+	header, nav, section, footer {
+		padding: 8px 40px;
+	}
+}
+
+/* class styling */
+.flexContainer {
+	margin: 12px 0px;
+	display: flex;
+}
+.boxShadow {
+	width: 200px;
+	height: 260px;
+	background: lime;
+	box-shadow: 5px 5px 10px black;
+}
+
+/* id styling */
+#flexContainerAsset {
+	justify-content: space-evenly;
 }
