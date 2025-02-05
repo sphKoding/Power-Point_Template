@@ -3,6 +3,10 @@
  margin: 0;
 }
 
+/* all responsive */
+header, nav, section, footer {
+ padding: 8px;
+}
 header {
  /* text-align: center; */
  display: flex;
@@ -20,9 +24,6 @@ nav {
 @media screen and (max-width: 480px) {
  header, section, footer {
   height: 648px;
- }
- header, nav, section, footer{
-  padding: 8px;
  }
 }
 
