@@ -10,11 +10,19 @@ header {
  justify-content: center;
  align-items: center;
 }
+nav {
+ position: -webkit-sticky; /* safari */
+ position: sticky;
+ top: 0;
+}
 
 /* mobile responsive */
 @media screen and (max-width: 480px) {
- header, section {
-  height: 698px;
+ header, section, footer {
+  height: 648px;
+ }
+ header, nav, section, footer{
+  padding: 8px;
  }
 }
 
