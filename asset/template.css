@@ -15,6 +15,9 @@
 header, nav, section, footer {
  /* width: 100%; */
  padding: 8px;
+ /* display: flex;
+ flex-direction: column;
+ flex-wrap: wrap; */
 }
 header {
  /* text-align: center; */
@@ -40,23 +43,6 @@ table {
 }
 td {
 	text-align: center;
-}
-
-/* mobile responsive */
-@media screen and (max-width: 480px) {
- header, section, footer {
-  height: 648px;
- }
-}
-
-/* pc responsive */
-@media screen and (min-width: 480px) {
- header, section, footer {
-  min-height: 554px;
- }
-	header, nav, section, footer {
-		padding: 8px 40px;
-	}
 }
 
 /* class styling */
@@ -85,4 +71,24 @@ td {
 }
 #textAlign_center {
 	text-align: center;
+}
+
+/* pc responsive */
+@media screen and (min-width: 480px) {
+ header, section, footer {
+  min-height: 554px;
+ }
+	header, nav, section, footer {
+		padding: 8px 40px;
+	}
+}
+
+/* mobile responsive */
+@media screen and (max-width: 480px) {
+ header, section, footer {
+  height: 648px;
+ }
+ table {
+  display: none;
+ } 
 }
