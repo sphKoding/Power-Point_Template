@@ -1,5 +1,5 @@
 * {
- /* outline: 1px dashed red; */
+ outline: 1px dashed red; 
  margin: 0;
  /* font-size: 1em; */
 }
@@ -108,6 +108,10 @@ td {
  header {
   background-size: 350px auto;
   background-position: 0px 50px;
+ }
+ .background_opacity {
+  display: flex;
+  justify-content: center;
  }
  .header_text {
   position: absolute;
