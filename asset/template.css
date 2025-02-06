@@ -33,7 +33,13 @@ nav {
  position: -webkit-sticky; /* safari */
  position: sticky;
  top: 0;
-	background: gray;
+	background: #f26a4b;
+	display: flex;
+	justify-content: space-between;
+}
+nav button {
+	height: 36px;
+	border: none;
 }
 section h3, p {
 	text-align: center;
@@ -50,8 +56,6 @@ td {
 
 /* class styling */
 .boxShadow {
-	width: 200px;
-	height: 260px;
 	box-shadow: 5px 5px 10px black;
 }
 .flexContainer {
@@ -60,6 +64,10 @@ td {
 }
 
 /* id styling */
+#backgroundBlue, #backgroundRed, #backgroundYellow {
+	width: 200px;
+	height: 260px;
+} 
 #backgroundBlue {
 	background: blue;
 }
@@ -86,17 +94,24 @@ td {
  header, section, footer {
   min-height: 554px;
  }
+	header {
+		background-attachment: fixed;
+	}
 	.background_opacity {
 		width: 100%;
 		height: 554px;
-		background: rgba(242, 242, 242, 0.8);
+		background: rgba(242, 242, 242, 0.9);
  	display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; 
 	}
-	header, nav, section, footer {
+	header, section, footer {
 		padding: 8px 40px;
+	}
+	nav {
+		height: 36px;
+		padding: 0px 40px;
 	}
 }
 
