@@ -1,5 +1,5 @@
 * {
- outline: 1px dashed red; 
+ /* outline: 1px dashed red; */
  margin: 0;
  /* font-size: 1em; */
 }
@@ -20,11 +20,14 @@ header, nav, section, footer {
  flex-wrap: wrap; */
 }
 header {
+ background-size: 90% auto;
+ background: url(powerPoint.jpg) no-repeat center;
+ background-attachment: cover;
  /* text-align: center; */
  display: flex;
  flex-direction: column;
  justify-content: center;
- align-items: center;
+ align-items: center; 
 }
 nav {
  position: -webkit-sticky; /* safari */
@@ -73,6 +76,11 @@ td {
 	text-align: center;
 }
 
+/* custom styling */
+#powerPoint_text {
+ color: #bf3c1f;
+}
+
 /* pc responsive */
 @media screen and (min-width: 480px) {
  header, section, footer {
@@ -87,6 +95,14 @@ td {
 @media screen and (max-width: 480px) {
  header, section, footer {
   height: 648px;
+ }
+ header {
+  background-size: 350px auto;
+  background-position: 0px 50px;
+ }
+ .header_text {
+  position: absolute;
+  top: 350px;
  }
  table {
   display: none;
